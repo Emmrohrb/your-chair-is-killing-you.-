@@ -1,0 +1,49 @@
+// Your chair is killing you.
+//
+
+#include "stdafx.h"   // current libary
+# include <windows.h>
+# include <iostream>
+#include "string"
+#include <ctime>
+#include <cctype>
+using namespace std;
+
+void timer(int sec) //the timer 
+{
+	Sleep(sec * 1000);// the timer set to 15 minutes.
+					   //15000 equals to 15 mintues becuase 1000 is 1 minute. 
+}
+
+
+int main()
+{
+
+
+	string name; //variable for the user
+	string age;
+	Beep(523, 500); //beeeeeep start. 523 hertz for 500 milliseconds.
+	cout << "My name is Sir chairalot." << endl; // the name of the bot.
+	cout << "knight of the round chair." << endl;
+	cout << "I shall beep when 15 minutes have passed after you have put in your name and age.";
+	cout << "name?" << endl;
+	cin >> name;
+	cout << "age/n";
+	cin >> age;
+	cout << "profile made :" << "Name :" << name << "age :" << age << endl; // displaying info 
+	cout << " Warning: Profiles are deleted on closing/n";
+	cout << "15 Mintues till take off " << endl;
+	cout << ".";
+	cout << ".";
+	cout << ".";
+	timer(15);
+	Beep(523, 500); // 523 hertz for 500 milliseconds.
+	cin.get(); // wait 
+	cout << "Liftoff!!" << name << "Time to get up/n/n" << endl; //display name and ending message.			
+	system("pause"); 
+					 // the time in the video should be a minute
+					 // end
+	return 0;
+}
+
+
